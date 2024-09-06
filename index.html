@@ -1,11 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel = "stylesheet" href = "style.css">
+    <title>Jujutso Kaisen</title>
 </head>
 <body>
-    
+
+    <div class="container">
+        <div class="fundo-transparente"></div>
+        </div>
+    <header>
+        <img src="imagens/logo/logo.png" alt="Logo do Site" class="logo">
+    </header>
+    <main>
+        <section class="pesquisa">
+            <input type="text" placeholder="Digite qual personagem deseja conhecer">
+            <button onclick="pesquisar()">Pesquisar</button>
+        </section>
+        
+        <section class="resultados-pesquisa" id="resultados-pesquisa">
+        </section>
+            
+    </main>
+
+
+    <!-- <footer>
+        <p>Byster</p>
+    </footer> -->
+    <script src="dados.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
