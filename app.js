@@ -1,43 +1,44 @@
 const inputPesquisa = document.querySelector('.pesquisa input');
 const botaoPesquisar = document.querySelector('.pesquisa button');
 
+// Adiciona evento de 'Enter' no campo de pesquisa
 inputPesquisa.addEventListener('keydown', (event) => {
-    // Adiciona um ouvinte de evento para o campo de pesquisa.
-    // Quando uma tecla é pressionada, a função dentro do eventListener é executada.
-
     if (event.keyCode === 13) {
-        // Verifica se a tecla pressionada é o Enter (código 13).
-        // Se sim, simula um clique no botão de pesquisa.
         botaoPesquisar.click();
     }
 });
 
+// Função que remove acentos e pontuação
+function removerAcentos(str) {
+    return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"");
+}
+
 // Função que realiza a pesquisa
 function pesquisar() {
-    // Obtém o valor digitado no campo de pesquisa
-    const termoPesquisa = document.querySelector('input').value.toLowerCase();
-
-    // Obtém a seção onde os resultados serão exibidos
+    const termoPesquisa = removerAcentos(document.querySelector('input').value.toLowerCase());
     let section = document.getElementById("resultados-pesquisa");
-
-    // Inicializa uma string vazia para armazenar os resultados
     let resultados = "";
 
-    // Filtra os dados com base no termo de pesquisa
+    // Verifica se o campo de pesquisa está vazio
+    if (termoPesquisa.trim() === "") {
+        section.innerHTML = "<p>Por favor, insira um termo de pesquisa.</p>";
+        return; // Encerra a função aqui
+    }
+
+    // Filtra os dados com base no termo de pesquisa sem acentuação
     let dadosFiltrados = dados.filter(dado => 
-        dado.Nome.toLowerCase().includes(termoPesquisa)
+        removerAcentos(dado.Nome.toLowerCase()).includes(termoPesquisa)
     );
 
-    // Itera sobre cada dado da lista de dados
-    for (let dado of dadosFiltrados)  {
-        // Cria um novo elemento HTML para cada resultado
+    // Itera sobre cada dado da lista de dados filtrados
+    for (let dado of dadosFiltrados) {
         resultados += `
             <div class="item-resultado">
                 <h2>
                     <a href="#" target="_blank">${dado.Nome}</a>
                 </h2>
-                <p class="descricao-meta">${dado.Descricao}</p>
-                <p class="descricao-meta">${dado.Habilidades}</p>
+                <p class="descricao-meta">${dado.Paragrafo01}</p>
+                <p class="descricao-meta">${dado.Paragrafo02}</p>
                 <a href=${dado.SaibaMais} target="_blank" class="link-mais-informacoes">Mais informações</a>
             </div>
         `;

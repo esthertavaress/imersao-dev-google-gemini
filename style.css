@@ -13,20 +13,22 @@ body {
     margin: 0;
     padding: 0;
     position: relative; /* Torna o body relativo para o fundo */
+    overflow-x: hidden; /* Impedir a barra de rolagem horizontal */
 }
 
 .fundo-transparente {
-    background-image: url(imagens/fundo/sukuna-fundo.png);
-    background-size: 110%;
-    background-repeat: no-repeat;
-    background-position: center; /* Mantém a imagem centralizada */
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     z-index: -1;
-    opacity: 0.3; /* Opcional */
+    background-image: url(imagens/fundo/sukuna-fundo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover; /* Ajusta a imagem para cobrir toda a área */
+    opacity: 0.6;
 }
 
 .logo {
@@ -34,13 +36,17 @@ body {
     height: 130px;
 }
 
-
 /* Estiliza os títulos h1 */
 h1 {
     font-size: 2.5rem; /* Tamanho da fonte */
     color: #222831; /* Cor do texto */
     text-align: center; /* Alinha o texto ao centro */
     letter-spacing: 0.4rem; /* Espaçamento entre letras */
+}
+
+p{
+    color: #ddddd8;
+    /* font-weight: bold; */
 }
 
 /* Estiliza as seções da página */
@@ -69,10 +75,9 @@ section input {
 }
 
 section input::placeholder {
-    color: #f3ed9d; /* Cor do texto de sugestão (igual ao do texto) */
+    color: #515151; /* Cor do texto de sugestão (igual ao do texto) */
 
 }
-
 
 /* Estiliza os botões dentro das seções */
 section button {
@@ -91,18 +96,31 @@ section button:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra mais intensa */
 }
 
-/* Estiliza a caixa de resultados da pesquisa */
+
+/* Seção para os resultados da pesquisa */
 .resultados-pesquisa {
-    width: 40rem; /* Largura máxima da caixa de resultados */
-    overflow-y: auto; /* Adiciona rolagem vertical se necessário */
-    margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
-    padding: 1rem; /* Espaçamento interno */
-    border-radius: 0.6rem; /* Borda arredondada */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    max-width: 80%; /* Limita a largura da seção */
+    margin: 0 auto;
+    padding-top: 2rem; /* Adiciona um espaçamento extra acima */
+}
+
+/* Cada item de resultado */
+.resultado {
+    width: 300px;
+    margin: 10rem;
+    background-color: #fff; /* Cor de fundo dos resultados */
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Estiliza cada item de resultado */
 .item-resultado {
-    background: #FFFFFF; /* Cor de fundo dos itens */
+    background-color: #070707;
     border-radius: 0.6rem; /* Borda arredondada */
     padding: 1rem; /* Espaçamento interno */
     margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
@@ -112,13 +130,14 @@ section button:hover {
 /* Estiliza os títulos dentro dos itens de resultado */
 .item-resultado h2 {
     font-size: 1.5rem; /* Tamanho da fonte */
-    color: #222831; /* Cor do texto */
+    color: #f3f2ea; /* Cor do texto */
+    font-weight: bold;
 }
 
 /* Estiliza os links dentro dos itens de resultado */
 .item-resultado a {
     text-decoration: none; /* Remove o sublinhado padrão dos links */
-    color: #000000; /* Cor do texto dos links */
+    color: #f3eb7b; /* Cor do texto dos links */
     font-weight: bold;
 }
 
@@ -129,20 +148,28 @@ section button:hover {
 
 /* Estiliza a descrição meta dentro dos itens de resultado */
 .descricao-meta {
-    color: #45474B; /* Cor do texto */
+    color: #e7e8eb; /* Cor do texto */
     margin: 0.5rem 0; /* Margem acima e abaixo */
 }
 
 /* Estiliza o rodapé da página */
 footer {
-    background-color: #1d1c1c; /* Cor de fundo do rodapé */
-    color: #edeef0; /* Cor do texto */
+    background-color: #070707; /* Torna o fundo transparente */
+    border-top: transparent; /* Linha fina na parte superior do rodapé */
+    color: #f3eb7b; /* Cor do texto */
     text-align: center; /* Alinha o texto ao centro */
-    padding: 0; /* Espaçamento interno */
+    padding: 0.25rem 0; /* Reduz o espaçamento interno */
     width: 100%; /* Largura total da página */
     position: absolute; /* Posiciona o rodapé */
     bottom: 0; /* Alinha ao fundo da página */
-    font-size: 1rem; /* Tamanho da fonte */
+    font-size: 0.8rem; /* Tamanho da fonte menor */
+}
+
+/* Estiliza o texto dentro do rodapé */
+footer p {
+    color: #f3eb7b; /* Cor do texto */
+    margin: 0; /* Remove a margem padrão */
+    line-height: 1.2; /* Ajusta o espaçamento entre linhas, se necessário */
 }
 
 @media (max-width: 768px) {
