@@ -32,7 +32,20 @@ Durante o desenvolvimento deste projeto, aprofundei meus conhecimentos em:
 - **Design Responsivo**: O layout se adapta a diferentes tamanhos de tela, garantindo uma boa experiência tanto no desktop quanto no celular.
 
 ##📸 Screenshots
+
+Tela Principal
+<p align="center">
+  <img src="https://github.com/esthertavaress/imersao-dev-google-gemini/blob/main/imagens/readme/tela-principal.png" alt="Imagem da Pesquisa" width="500px">
+</p>
+
+Tela Pesquisar
 <p align="center">
   <img src="https://github.com/esthertavaress/imersao-dev-google-gemini/blob/main/imagens/readme/pesquisa.png" alt="Imagem da Pesquisa" width="500px">
 </p>
+
+Tela Quiz
+<p align="center">
+  <img src="https://github.com/esthertavaress/imersao-dev-google-gemini/blob/main/imagens/readme/quizz.png" alt="Imagem da Pesquisa" width="500px">
+</p>
+
 
