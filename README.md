@@ -33,7 +33,7 @@ Durante o desenvolvimento deste projeto, aprofundei meus conhecimentos em:
 
 ---
 
-##📸 Screenshots
+## 📸 Screenshots
 
 <p align="center"><b>Tela Principal</b></p>
 <p align="center">
