@@ -322,13 +322,97 @@ footer p {
     font-size: 1.4rem;
 }
 
-/* Responsividade */
+/* Responsividade para dispositivos móveis */
 @media (max-width: 768px) {
-    .quiz-section {
-        width: 90%;
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul {
+        flex-direction: column; /* Muda o menu para uma coluna */
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    nav li {
+        margin: 10px 0; /* Adiciona espaço entre os itens do menu */
+    }
+
+    .logo-container {
+        margin-bottom: 1rem; /* Reduz o espaço para telas menores */
+    }
+
+    .logo {
+        width: 250px; /* Ajusta o tamanho da logo para caber melhor */
+        height: auto;
     }
 
     h1 {
-        font-size: 2rem;
+        font-size: 1.8rem; /* Reduz o tamanho do título */
+        letter-spacing: 0.3rem;
+    }
+
+    section input {
+        width: 100%; /* Faz o input ocupar a largura total da tela */
+        padding: 0.8rem;
+    }
+
+    section button {
+        width: 100%;
+        padding: 0.8rem;
+    }
+
+    .quiz-section {
+        width: 100%;
+        padding: 15px; /* Ajusta o padding da quiz section */
+    }
+
+    #quizContainer {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .resultados-pesquisa {
+        flex-direction: column; /* Muda os resultados para uma coluna */
+        align-items: center;
+    }
+
+    .resultado {
+        width: 100%; /* Faz os resultados ocuparem toda a largura */
+        margin: 10px 0;
+    }
+
+    footer p {
+        font-size: 0.8rem; /* Ajusta o tamanho da fonte no rodapé */
+    }
+
+    button {
+        font-size: 0.8rem;
     }
 }
+
+@media (max-width: 480px) {
+    /* Ajustes para telas muito pequenas, como smartphones */
+    .logo {
+        width: 200px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        letter-spacing: 0.2rem;
+    }
+
+    section input, section button {
+        padding: 0.6rem;
+    }
+
+    .quiz-section button {
+        font-size: 14px;
+    }
+
+    .resultado {
+        width: 90%;
+    }
+}
+
