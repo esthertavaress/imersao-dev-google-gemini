@@ -3,31 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href = "style.css">
-    <title>Jujutso Kaisen</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Jujutsu Kaisen</title>
 </head>
 <body>
-
     <div class="container">
         <div class="fundo-transparente"></div>
-        </div>
-    <header>
-        <img src="imagens/logo/logo.png" alt="Logo do Site" class="logo">
-    </header>
-    <main>
-        <section class="pesquisa">
-            <input type="text" placeholder="Explore a história e conheça os personagens">
-            <button onclick="pesquisar()">Pesquisar</button>
-        </section>
-        
-        <section class="resultados-pesquisa" id="resultados-pesquisa">
-        </section>
+        <header>
+            <div class="container">
+                <div class="logo-container">
+                    <img src="imagens/logo/logo.png" alt="Logo do Site" class="logo">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="https://esthertavaress.github.io/imersao-dev-google-gemini/">Inicío</a></li>
+                        <li><a href="#quizContainer" id="quizContainerLink">Quiz: descubra com qual personagem de Jujutsu você se parece</a></li>
+                        <li><a href="https://www.crunchyroll.com/pt-br/series/GRDV0019R/jujutsu-kaisen">Onde Assistir</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="pesquisa">
+                <div class="search-container">
+                    <input type="text" placeholder="Explore a história e conheça os personagens">
+                    <button onclick="pesquisar()">
+                        <img src="imagens/pesquisar/lupa.png" alt="Ícone de pesquisa">    
+                    </button>
+                </div>
+            </section>
             
-    </main>
+            <section class="resultados-pesquisa" id="resultados-pesquisa">
+            </section>
 
-    <footer>
-        <p>© 2024 Esther Barreto. Todos os direitos reservados.</p>
-    </footer>
+            <!-- <section class="quiz-section">
+                <p>Participe do Quiz e descubra com qual personagem de Jujutsu você se parece</p>
+                <button id="fazerQuizBtn"> QUIZ </button>
+            </section> -->
+
+            <!-- SEÇÃO QUIZ -->
+            <div id="quizContainer">
+                <h2>Quiz: Com qual personagem de Jujutsu Kaisen você mais se parece?</h2>
+                <form id="quizForm">
+                    <div class="question">
+                        <p>1. Qual é a sua abordagem para enfrentar uma situação difícil?</p>
+                        <label><input type="radio" name="q1" value="A"> Pensar estrategicamente e buscar soluções criativas</label>
+                        <label><input type="radio" name="q1" value="B"> Agir de forma direta e confiar na força física</label>
+                    </div>
+                    <div class="question">
+                        <p>2. Como você prefere trabalhar em equipe?</p>
+                        <label><input type="radio" name="q2" value="A"> Coordenar e planejar a estratégia com os membros da equipe</label>
+                        <label><input type="radio" name="q2" value="B"> Lutar ao lado da equipe, destacando-se pela força individual</label>
+                    </div>
+                    <div class="question">
+                        <p>3. Qual é a sua principal motivação?</p>
+                        <label><input type="radio" name="q3" value="A"> Proteger aqueles que são importantes para você e manter a ordem</label>
+                        <label><input type="radio" name="q3" value="B"> Buscar poder e aprimorar suas habilidades pessoais</label>
+                    </div>
+                    <div class="question">
+                        <p>4. Como você lida com adversidades?</p>
+                        <label><input type="radio" name="q4" value="A"> Usando inteligência e táticas bem elaboradas</label>
+                        <label><input type="radio" name="q4" value="B"> Enfrentando de frente, sem hesitar, e mostrando sua determinação.</label>
+                    </div>
+                    <button type="button" onclick="calculateResult()">Ver Resultado</button>
+                </form>
+                <div id="result"></div>
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2024 Esther Barreto. Todos os direitos reservados.</p>
+        </footer>
 
     <script src="dados.js"></script>
     <script src="app.js"></script>

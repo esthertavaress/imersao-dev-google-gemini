@@ -12,10 +12,50 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0;
+    padding-bottom: 50px;
     position: relative; /* Torna o body relativo para o fundo */
     overflow-x: hidden; /* Impedir a barra de rolagem horizontal */
 }
 
+/* SEÇÃO MENU  */
+nav {
+    display: flex;
+    justify-content: center; /* Centraliza os itens do menu horizontalmente */
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 50px; /* Define a altura mínima para 60 pixels */
+    background-color: #070707;
+    color: #f3eb7b;
+    z-index: 999;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li { /* Adiciona margem aos itens da lista */
+    margin: 0 30px; /* Ajuste o valor 20px conforme necessário */
+}
+
+nav li a {
+    margin: 0 10px;
+    color: #f3eb7b;
+    text-decoration: none; /* Remove o sublinhado */
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+nav li a:hover {
+    color: #fff;
+}
+
+/* SEGÇÃO FUNDO DO SITE */
 .fundo-transparente {
     position: fixed;
     top: 0;
@@ -28,7 +68,15 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     object-fit: cover; /* Ajusta a imagem para cobrir toda a área */
-    opacity: 0.6;
+    opacity: 0.5;
+}
+
+/* SEÇÃO LOGO */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
 }
 
 .logo {
@@ -38,15 +86,14 @@ body {
 
 /* Estiliza os títulos h1 */
 h1 {
-    font-size: 2.5rem; /* Tamanho da fonte */
-    color: #222831; /* Cor do texto */
-    text-align: center; /* Alinha o texto ao centro */
-    letter-spacing: 0.4rem; /* Espaçamento entre letras */
+    font-size: 2.5rem;
+    color: #222831;
+    text-align: center;
+    letter-spacing: 0.4rem;
 }
 
-p{
+p {
     color: #ddddd8;
-    /* font-weight: bold; */
 }
 
 /* Estiliza as seções da página */
@@ -55,15 +102,14 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%; /* Garante que a seção ocupe toda a largura */
-    margin: 0 auto; /* Centraliza a seção na página */
+    width: 100%;
+    margin: 0 auto;
 }
-
 
 /* Estiliza os inputs dentro das seções */
 section input {
-    width: 30rem; /* Largura máxima dos inputs */
-    max-width: 100%; /* Limita a largura dos inputs em telas menores */
+    width: 30rem;
+    max-width: 100%;
     border: 1px solid #f3eb7b;
     padding: 1rem;
     border-radius: 1.5rem;
@@ -75,44 +121,77 @@ section input {
 }
 
 section input::placeholder {
-    color: #515151; /* Cor do texto de sugestão (igual ao do texto) */
-
+    color: #515151;
 }
 
 /* Estiliza os botões dentro das seções */
 section button {
-    padding: 0.8rem 1.2rem; /* Espaçamento interno do botão */
-    border: 1px solid #f3eb7b; /* Borda de 2px de espessura com cor preta */
-    border-radius: 1.5rem; /* Borda arredondada */
-    background-color: #070707; /* Cor de fundo do botão */
-    color: #f3eb7b; /* Cor do texto do botão */
-    font-size: 1rem; /* Tamanho da fonte */
-    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    padding: 0.8rem 1.2rem;
+    border: 1px solid #f3eb7b;
+    border-radius: 1.5rem;
+    background-color: #070707;
+    color: #f3eb7b;
+    font-size: 1rem;
+    cursor: pointer;
 }
 
-/* Adiciona efeito hover ao botão de pesquisa */
 section button:hover {
-    background-color: #515151; /* Muda a cor de fundo ao passar o mouse */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra mais intensa */
+    background-color: #515151;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* SEÇÃO PARA EDITAR BOTÃO QUIZ */
+button {
+    padding: 0.8rem 1.2rem;
+    border: 1px solid #f3eb7b;
+    border-radius: 1.5rem;
+    background-color: #070707;
+    color: #f3eb7b;
+    font-size: 0.9rem;
+    cursor: pointer;
+    text-align: center;
+}
 
-/* Seção para os resultados da pesquisa */
+button:hover {
+    background-color: #515151;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* SEÇÃO BOTÃO DE PESQUISA */
+.pesquisa {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+section input {
+    width: 30rem;
+    flex-grow: 1;
+}
+
+.search-container button img {
+    width: 14px;
+    height: 14px;
+    filter: invert(1);
+}
+
+/* SEÇÃO PARA OS RESULTADOS DA PESQUISA */
 .resultados-pesquisa {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 20px;
-    max-width: 80%; /* Limita a largura da seção */
+    max-width: 80%;
     margin: 0 auto;
-    padding-top: 2rem; /* Adiciona um espaçamento extra acima */
+    padding-top: 2rem;
 }
 
 /* Cada item de resultado */
 .resultado {
     width: 300px;
     margin: 10rem;
-    background-color: #fff; /* Cor de fundo dos resultados */
+    background-color: #fff;
     padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -121,105 +200,135 @@ section button:hover {
 /* Estiliza cada item de resultado */
 .item-resultado {
     background-color: #070707;
-    border-radius: 0.6rem; /* Borda arredondada */
-    padding: 1rem; /* Espaçamento interno */
-    margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    border-radius: 0.6rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Estiliza os títulos dentro dos itens de resultado */
 .item-resultado h2 {
-    font-size: 1.5rem; /* Tamanho da fonte */
-    color: #f3f2ea; /* Cor do texto */
+    font-size: 1.5rem;
+    color: #f3f2ea;
     font-weight: bold;
 }
 
-/* Estiliza os links dentro dos itens de resultado */
 .item-resultado a {
-    text-decoration: none; /* Remove o sublinhado padrão dos links */
-    color: #f3eb7b; /* Cor do texto dos links */
+    text-decoration: none;
+    color: #f3eb7b;
     font-weight: bold;
 }
 
-/* Estiliza os links quando são passados o mouse sobre */
 .item-resultado a:hover {
-    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+    text-decoration: underline;
 }
 
-/* Estiliza a descrição meta dentro dos itens de resultado */
 .descricao-meta {
-    color: #e7e8eb; /* Cor do texto */
-    margin: 0.5rem 0; /* Margem acima e abaixo */
+    color: #e7e8eb;
+    margin: 0.5rem 0;
 }
 
 /* Estiliza o rodapé da página */
 footer {
-    background-color: #070707; /* Torna o fundo transparente */
-    border-top: transparent; /* Linha fina na parte superior do rodapé */
-    color: #f3eb7b; /* Cor do texto */
-    text-align: center; /* Alinha o texto ao centro */
-    padding: 0.25rem 0; /* Reduz o espaçamento interno */
-    width: 100%; /* Largura total da página */
-    position: absolute; /* Posiciona o rodapé */
-    bottom: 0; /* Alinha ao fundo da página */
-    font-size: 0.8rem; /* Tamanho da fonte menor */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    border-top: transparent;
+    color: #f3eb7b;
+    text-align: center;
+    padding: 0.25rem 0;
+    z-index: 999;
+}
+
+/* Adiciona espaço entre o formulário e o rodapé */
+body {
+    padding-bottom: 100px; /* Ajusta o valor conforme necessário */
 }
 
 /* Estiliza o texto dentro do rodapé */
 footer p {
-    color: #f3eb7b; /* Cor do texto */
-    margin: 0; /* Remove a margem padrão */
-    line-height: 1.2; /* Ajusta o espaçamento entre linhas, se necessário */
+    color: #ffffff;
+    margin: 0;
+    line-height: 1.2;
+    font-size: 0.9rem;
 }
 
+/* SEÇÃO QUIZZ */
+.quiz-section {
+    background-color: rgba(131, 131, 131, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+    width: 80%;
+    max-width: 350px;
+    margin: 20px auto;
+    box-sizing: border-box;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 50px;
+}
+
+.quiz-section p {
+    color: rgb(211, 204, 204);
+    font-size: 1.rem;
+    font-weight: bold;
+}
+
+.quiz-section button {
+    background-color: #070707;
+    color: #f3eb7b;
+    padding: 15px 18px;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/* FORMULARIO */
+#quizContainer {
+    display: none;
+    margin: 20px;
+    padding: 20px;
+    background-color: #070707;
+    border-radius: 0.6rem;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#quizContainer h2 {
+    margin-top: 0;
+    color: #daa520;
+}
+
+#quizContainer .question {
+    margin-bottom: 15px;
+}
+
+#quizContainer p {
+    color: #f3eb7b;
+}
+
+#quizContainer label {
+    display: block;
+    margin: 10px 0;
+    color: #949090;
+}
+
+#result {
+    color: white;
+    margin: 20px;
+    font-size: 1.4rem;
+}
+
+/* Responsividade */
 @media (max-width: 768px) {
-    h1 {
-        font-size: 2rem; /* Tamanho da fonte em telas menores */
-        letter-spacing: 0.2rem; /* Espaçamento entre letras em telas menores */
+    .quiz-section {
+        width: 90%;
     }
-
-    section input {
-        width: 25rem; /* Largura dos inputs em telas menores */
-        padding: 0.8rem; /* Espaçamento interno em telas menores */
-    }
-
-    .resultados-pesquisa {
-        width: 40rem; /* Largura da caixa de resultados em telas menores */
-        height: 40vh; /* Altura da caixa de resultados em telas menores */
-    }
-
-    .item-resultado h2 {
-        font-size: 1.3rem; /* Tamanho da fonte dos títulos em telas menores */
-    }
-}
-
-/* Responsividade para celulares */
-@media (max-width: 480px) {
 
     h1 {
-        font-size: 1.8rem; /* Tamanho da fonte em telas pequenas */
-        letter-spacing: 0.1rem; /* Espaçamento entre letras em telas pequenas */
-    }
-
-    section input {
-        width: 17rem; /* Largura total dos inputs em telas pequenas */
-    }
-
-    section button {
-        padding: 0.6rem 1rem; /* Espaçamento interno do botão em telas pequenas */
-        font-size: 0.9rem; /* Tamanho da fonte do botão em telas pequenas */
-    }
-
-    .resultados-pesquisa {
-        width: 90%; /* Largura da caixa de resultados em telas pequenas */
-        height: 50vh; /* Altura da caixa de resultados em telas pequenas */
-    }
-
-    .item-resultado h2 {
-        font-size: 1.1rem; /* Tamanho da fonte dos títulos em telas pequenas */
-    }
-
-    footer {
-        font-size: 0.9rem; /* Tamanho da fonte do rodapé em telas pequenas */
+        font-size: 2rem;
     }
 }
