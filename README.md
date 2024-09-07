@@ -2,10 +2,7 @@
 
 Repositório da Imersão Dev - Google Gemini, onde desenvolvi um site inspirado na estrutura de busca do Google, aplicado ao universo de Jujutsu Kaisen. O projeto inclui funcionalidades como quiz interativo, uma interface estilizada e pesquisa de informações sobre o anime. Durante a imersão, foi possível colocar em prática habilidades em HTML, CSS e JavaScript.
 
-<p align="center">
-  <img src="imersao-dev-google-gemini/imagens/readme/pesquisa.png" alt="Imagem do Projeto" width="600px">
-</p>
-
+Acesse o site: https://esthertavaress.github.io/imersao-dev-google-gemini/
 ---
 
 ## 🔥 Tecnologias Utilizadas
@@ -34,4 +31,8 @@ Durante o desenvolvimento deste projeto, aprofundei meus conhecimentos em:
 - **Pesquisa de Conteúdo**: O site simula uma barra de pesquisa, permitindo aos usuários explorar informações sobre personagens e episódios.
 - **Design Responsivo**: O layout se adapta a diferentes tamanhos de tela, garantindo uma boa experiência tanto no desktop quanto no celular.
 
+##📸 Screenshots
+<p align="center">
+  <img src="https://github.com/esthertavaress/imersao-dev-google-gemini/blob/main/imagens/readme/pesquisa.png" alt="Imagem da Pesquisa" width="500px">
+</p>
 
