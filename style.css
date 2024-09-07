@@ -26,7 +26,7 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    min-height: 50px; /* Define a altura mínima para 60 pixels */
+    min-height: 45px; /* Define a altura mínima para 60 pixels */
     background-color: #070707;
     color: #f3eb7b;
     z-index: 999;
@@ -45,7 +45,7 @@ nav li { /* Adiciona margem aos itens da lista */
 
 nav li a {
     margin: 0 10px;
-    color: #f3eb7b;
+    color: #f3ed97;
     text-decoration: none; /* Remove o sublinhado */
     text-align: center;
     transition: color 0.3s ease;
@@ -229,22 +229,16 @@ section input {
 
 /* Estiliza o rodapé da página */
 footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
     width: 100%;
     background-color: transparent;
     border-top: transparent;
     color: #f3eb7b;
     text-align: center;
     padding: 0.25rem 0;
-    z-index: 999;
+    display: none; /* Começa invisível */
 }
 
-/* Adiciona espaço entre o formulário e o rodapé */
-body {
-    padding-bottom: 100px; /* Ajusta o valor conforme necessário */
-}
+
 
 /* Estiliza o texto dentro do rodapé */
 footer p {
@@ -265,7 +259,7 @@ footer p {
     box-sizing: border-box;
     text-align: center;
     color: #fff;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8);
     margin-bottom: 50px;
 }
 
@@ -289,9 +283,9 @@ footer p {
 /* FORMULARIO */
 #quizContainer {
     display: none;
-    margin: 20px;
-    padding: 20px;
-    background-color: #070707;
+    margin: 15px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.9); /* Preto com 50% de transparência */
     border-radius: 0.6rem;
     text-align: center;
     box-sizing: border-box;
@@ -299,7 +293,7 @@ footer p {
 
 #quizContainer h2 {
     margin-top: 0;
-    color: #daa520;
+    color: #ff3d2e;
 }
 
 #quizContainer .question {
@@ -313,7 +307,7 @@ footer p {
 #quizContainer label {
     display: block;
     margin: 10px 0;
-    color: #949090;
+    color: #b9b2b2;
 }
 
 #result {

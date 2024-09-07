@@ -132,3 +132,14 @@ quizLink.addEventListener('click', () => {
     quizContainer.style.display = 'block';
 });
 
+window.addEventListener("scroll", function() {
+    // Obtém a altura total da página
+    const pageHeight = document.documentElement.scrollHeight;
+    // Obtém a posição do scroll atual
+    const scrollPosition = window.innerHeight + window.scrollY;
+
+    // Verifica se o usuário chegou ao final da página
+    if (scrollPosition >= pageHeight) {
+        document.querySelector("footer").style.display = "block";
+    }
+});

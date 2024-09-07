@@ -27,7 +27,7 @@ let dados = [
     Nome: "Suguru Geto (夏油 傑)",
     Paragrafo01: "Suguru Geto é um ex-feiticeiro jujutsu e principal antagonista de Jujutsu Kaisen. Ele acredita que apenas feiticeiros deveriam existir e busca criar um mundo onde não haja humanos normais, liderando maldições para alcançar seu objetivo.",
     Paragrafo02: "Geto manipula espíritos amaldiçoados, podendo exorcizá-los e controlá-los. Sua técnica principal é a Manipulação de Espíritos Amaldiçoados, absorvendo maldições para usá-las em combate.",
-    SaibaMais: "https://jujutsukaisen.fandom.com/pt-br/wiki/Suguru_Geto"
+    SaibaMais: "https://jujutsu-kaisen.fandom.com/wiki/Suguru_Geto"
 },
 {
     Nome: "Kento Nanami (七海 建人)",
@@ -39,7 +39,7 @@ let dados = [
     Nome: "Ryomen Sukuna (両面宿儺)",
     Paragrafo01: "Ryomen Sukuna, o Rei das Maldições, é uma entidade poderosa e o principal antagonista. Após sua derrota, seu corpo foi selado em 20 dedos, que são objetos amaldiçoados. Ele agora reside dentro de Yuji, tentando tomar controle de seu corpo.",
     Paragrafo02: "Sukuna possui imenso poder, incluindo regeneração, controle de energia amaldiçoada e técnicas misteriosas. Ele é uma ameaça constante, já que pode tomar controle do corpo de Yuji em certas circunstâncias.",
-    SaibaMais: "https://jujutsukaisen.fandom.com/pt-br/wiki/Ryomen_Sukuna"
+    SaibaMais: "https://jujutsukaisen.fandom.com/pt-br/wiki/Sukuna?so=search"
 },
 {
     Nome: "Maki Zenin (禪院 真希)",
@@ -63,13 +63,13 @@ let dados = [
     Nome: "Yuta Okkotsu (乙骨 憂太)",
     Paragrafo01: "Yuta Okkotsu é um estudante da escola jujutsu e protagonista de *Jujutsu Kaisen 0*. Ele carrega uma maldição de nível especial ligada a Rika Orimoto, sua amiga de infância, e está sob a tutela de Satoru Gojo. Yuta tem um grande potencial e busca controlar a maldição de Rika para proteger os outros.",
     Paragrafo02: "Yuta possui imensa energia amaldiçoada devido à ligação com Rika, permitindo-lhe usar técnicas poderosas. Ele também é hábil em combate corpo a corpo e no uso de espadas amaldiçoadas.",
-    SaibaMais: "https://jujutsukaisen.fandom.com/pt-br/wiki/Yuta_Okkotsu"
+    SaibaMais: "https://jujutsu-kaisen.fandom.com/wiki/Yuta_Okkotsu"
 },
 {
     Nome: "Rika Orimoto (織本 里香)",
     Paragrafo01: "Rika Orimoto é uma maldição de nível especial que está ligada a Yuta Okkotsu. Antes de morrer, ela era a amiga de infância de Yuta e o amava profundamente. Após sua morte, ela se tornou uma poderosa maldição, protegendo Yuta e atacando qualquer um que o ameaçasse.",
     Paragrafo02: "Rika tem um poder devastador como maldição, com força sobre-humana e energia amaldiçoada praticamente ilimitada. Ela também pode manifestar-se fisicamente em combate.",
-    SaibaMais: "https://jujutsukaisen.fandom.com/pt-br/wiki/Rika_Orimoto"
+    SaibaMais: "https://jujutsu-kaisen.fandom.com/wiki/Rika_Orimoto"
 },
 {
     Nome: "Mai Zenin (禪院 真依)",
@@ -105,19 +105,19 @@ let dados = [
     Nome: "Choso (脹相)",
     Paragrafo01: "Choso é um dos Irmãos da Pintura da Morte, criado a partir de maldições e células humanas. Apesar de ser uma maldição, ele possui um forte laço emocional com seus irmãos e entra em conflito com os feiticeiros jujutsu.",
     Paragrafo02: "Choso tem a habilidade de manipular seu próprio sangue, usando a Técnica de Manipulação de Sangue. Ele pode controlar seu sangue para criar ataques devastadores e curar-se.",
-    SaibaMais: "https://jujutsukaisen.fandom.com/pt-br/wiki/Choso"
+    SaibaMais: "https://jujutsu-kaisen.fandom.com/wiki/Choso"
 },
 {
     Nome: "Hanami (花御)",
     Paragrafo01: "Hanami é um espírito amaldiçoado de alto nível que luta ao lado de Mahito e outros espíritos amaldiçoados. Hanami é apaixonado pela natureza e acredita que a humanidade a está destruindo.",
     Paragrafo02: "Hanami tem uma técnica de controle sobre a vegetação, permitindo-lhe manipular plantas para atacar ou se defender. Ele também possui grande resistência e capacidade de regeneração.",
-    SaibaMais: "https://jujutsukaisen.fandom.com/pt-br/wiki/Hanami"
+    SaibaMais: "https://jujutsu-kaisen.fandom.com/wiki/Hanami"
 },
 {
     Nome: "Jogo (漏瑚)",
     Paragrafo01: "Jogo é um espírito amaldiçoado de alto nível que deseja exterminar a humanidade. Ele é arrogante e confiante, acreditando que os espíritos amaldiçoados são superiores aos humanos.",
     Paragrafo02: "Jogo possui a habilidade de manipular fogo e magma, usando ataques baseados em calor extremo. Ele também tem uma técnica de expansão de domínio chamada 'Monte de Ferro', que incinera tudo ao redor.",
-    SaibaMais: "https://jujutsukaisen.fandom.com/pt-br/wiki/Jogo"
+    SaibaMais: "https://jujutsu-kaisen.fandom.com/wiki/Jogo"
 },
 {
     Nome: "Mahito (真人)",
@@ -139,4 +139,4 @@ let dados = [
 },
 
 
-    ];
+];
