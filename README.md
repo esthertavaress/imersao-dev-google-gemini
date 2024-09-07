@@ -31,6 +31,8 @@ Durante o desenvolvimento deste projeto, aprofundei meus conhecimentos em:
 - **Pesquisa de Conteúdo**: O site simula uma barra de pesquisa, permitindo aos usuários explorar informações sobre personagens e episódios.
 - **Design Responsivo**: O layout se adapta a diferentes tamanhos de tela, garantindo uma boa experiência tanto no desktop quanto no celular.
 
+---
+
 ##📸 Screenshots
 
 <p align="center"><b>Tela Principal</b></p>
