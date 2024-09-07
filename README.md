@@ -33,19 +33,19 @@ Durante o desenvolvimento deste projeto, aprofundei meus conhecimentos em:
 
 ##📸 Screenshots
 
-Tela Principal
+<p align="center"><b>Tela Principal</b></p>
 <p align="center">
-  <img src="https://github.com/esthertavaress/imersao-dev-google-gemini/blob/main/imagens/readme/tela-principal.png" alt="Imagem da Pesquisa" width="500px">
+  <img src="https://github.com/esthertavaress/imersao-dev-google-gemini/blob/main/imagens/readme/tela-principal.png" alt="Imagem da Tela Principal" width="500px">
 </p>
 
-Tela Pesquisar
+<p align="center"><b>Tela Pesquisar</b></p>
 <p align="center">
   <img src="https://github.com/esthertavaress/imersao-dev-google-gemini/blob/main/imagens/readme/pesquisa.png" alt="Imagem da Pesquisa" width="500px">
 </p>
 
-Tela Quiz
+<p align="center"><b>Tela Quiz</b></p>
 <p align="center">
-  <img src="https://github.com/esthertavaress/imersao-dev-google-gemini/blob/main/imagens/readme/quizz.png" alt="Imagem da Pesquisa" width="500px">
+  <img src="https://github.com/esthertavaress/imersao-dev-google-gemini/blob/main/imagens/readme/quizz.png" alt="Imagem do Quiz" width="500px">
 </p>
 
 
