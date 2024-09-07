@@ -1,7 +1,7 @@
 /* Importa a fonte Chakra Petch do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
-/* Estiliza o corpo da página */
+/* SEÇÃO CORPO PRINCIPAL */
 body {
     font-family: "Chakra Petch", sans-serif;
     background-color: #515151;
@@ -13,8 +13,20 @@ body {
     margin: 0;
     padding: 0;
     padding-bottom: 50px;
-    position: relative; /* Torna o body relativo para o fundo */
-    overflow-x: hidden; /* Impedir a barra de rolagem horizontal */
+    position: relative; 
+    overflow-x: hidden; 
+}
+
+
+h1 {
+    font-size: 2.5rem;
+    color: #222831;
+    text-align: center;
+    letter-spacing: 0.4rem;
+}
+
+p {
+    color: #ddddd8;
 }
 
 /* SEÇÃO MENU  */
@@ -26,7 +38,7 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    min-height: 45px; /* Define a altura mínima para 60 pixels */
+    min-height: 45px; /* Define a altura mínima */
     background-color: #070707;
     color: #f3eb7b;
     z-index: 999;
@@ -39,8 +51,8 @@ nav ul {
     display: flex;
 }
 
-nav li { /* Adiciona margem aos itens da lista */
-    margin: 0 30px; /* Ajuste o valor 20px conforme necessário */
+nav li { 
+    margin: 0 30px; 
 }
 
 nav li a {
@@ -55,7 +67,7 @@ nav li a:hover {
     color: #fff;
 }
 
-/* SEGÇÃO FUNDO DO SITE */
+/* SEÇÃO FUNDO DO SITE */
 .fundo-transparente {
     position: fixed;
     top: 0;
@@ -84,17 +96,6 @@ nav li a:hover {
     height: 130px;
 }
 
-/* Estiliza os títulos h1 */
-h1 {
-    font-size: 2.5rem;
-    color: #222831;
-    text-align: center;
-    letter-spacing: 0.4rem;
-}
-
-p {
-    color: #ddddd8;
-}
 
 /* Estiliza as seções da página */
 section {
@@ -106,7 +107,7 @@ section {
     margin: 0 auto;
 }
 
-/* Estiliza os inputs dentro das seções */
+/* SEÇÃO ESTILIZANDO SECTION */
 section input {
     width: 30rem;
     max-width: 100%;
@@ -227,7 +228,7 @@ section input {
     margin: 0.5rem 0;
 }
 
-/* Estiliza o rodapé da página */
+/* SEÇÃO RODAPÉ*/
 footer {
     width: 100%;
     background-color: transparent;
@@ -239,7 +240,6 @@ footer {
 }
 
 
-
 /* Estiliza o texto dentro do rodapé */
 footer p {
     color: #ffffff;
@@ -247,6 +247,7 @@ footer p {
     line-height: 1.2;
     font-size: 0.9rem;
 }
+
 
 /* SEÇÃO QUIZZ */
 .quiz-section {
@@ -316,7 +317,7 @@ footer p {
     font-size: 1.4rem;
 }
 
-/* Responsividade para dispositivos móveis */
+/* SEÇÃO RESPONSIVIDADE */
 @media (max-width: 768px) {
     body {
         padding: 0;
